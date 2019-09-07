@@ -13,181 +13,20 @@
           content="473746275285-nr33bnte927s2f730i5mfp3gd1l9vjnu.apps.googleusercontent.com">
 </head>
 <body>
-<div class="constrain">
-    <header>
-        <div class="logo">
-            <h1 class="logo-text"><span class="logo-text-highlight">VLinks</span> URL Shortener</h1>
-        </div>
-        <div class="account">
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-        </div>
-    </header>
-</div>
-<div class="main">
-    <div class="shorten-header">
-        <div class="constrain"><h1>Simplify your links</h1>
-            <div class="input-container"><input placeholder="Your original URL here">
-                <button>Shorten URL</button>
-            </div>
-            <div class="tagline">All goo.gl URLs and click analytics are public and can be accessed by anyone</div>
-        </div>
-    </div>
 
-    <div class="shorten-panel constrain">
-        <div class="panel-content">
-            <div class="tab-head">
-                <ul>
-                    <li class="active">
-                        <i class="material-icons">link</i>
-                        Shortener
-                    </li>
-                    <li>
-                        <i class="material-icons">supervisor_account</i>
-                        Account
-                    </li>
-                    <li>
-                        <i class="material-icons">redeem</i>
-                        Reward
-                    </li>
-                    <li>
-                        <i class="material-icons">equalizer</i>
-                        Analytics
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-content">
-                <table class="table-panel">
-                    <thead>
-                    <tr>
-                        <th>Long url</th>
-                        <th>Created</th>
-                        <th>Short url</th>
-                        <th>Clicks</th>
-                        <th>Prices</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>https://firebase.google.com/docs/dynamic-links/</td>
-                        <td>6 days ago</td>
-                        <td>
-                            <span>
-                                http://goo.gl/HJIYT8
-                                <i class="material-icons">equalizer</i>
-                            </span>
-                        </td>
-                        <td>453.87</td>
-                        <td>$ 5.4</td>
-                    </tr>
-                    <tr>
-                        <td>https://firebase.google.com/docs/dynamic-links/</td>
-                        <td>6 days ago</td>
-                        <td>
-                            <span>
-                                http://goo.gl/HJIYT8
-                                <i class="material-icons">equalizer</i>
-                            </span>
-                        </td>
-                        <td>453.87</td>
-                        <td>$ 5.4</td>
-                    </tr>
-                    <tr>
-                        <td>https://firebase.google.com/docs/dynamic-links/</td>
-                        <td>6 days ago</td>
-                        <td>
-                            <span>
-                                http://goo.gl/HJIYT8
-                                <i class="material-icons">equalizer</i>
-                            </span>
-                        </td>
-                        <td>453.87</td>
-                        <td>$ 5.4</td>
-                    </tr>
-                    <tr>
-                        <td>https://firebase.google.com/docs/dynamic-links/</td>
-                        <td>6 days ago</td>
-                        <td>
-                            <span>
-                                http://goo.gl/HJIYT8
-                                <i class="material-icons">equalizer</i>
-                            </span>
-                        </td>
-                        <td>453.87</td>
-                        <td>$ 5.4</td>
-                    </tr>
-                    <tr>
-                        <td>https://firebase.google.com/docs/dynamic-links/</td>
-                        <td>6 days ago</td>
-                        <td>
-                            <span>
-                                http://goo.gl/HJIYT8
-                                <i class="material-icons">equalizer</i>
-                            </span>
-                        </td>
-                        <td>453.87</td>
-                        <td>$ 5.4</td>
-                    </tr>
-                    <tr>
-                        <td>https://firebase.google.com/docs/dynamic-links/</td>
-                        <td>6 days ago</td>
-                        <td>
-                            <span>
-                                http://goo.gl/HJIYT8
-                                <i class="material-icons">equalizer</i>
-                            </span>
-                        </td>
-                        <td>453.87</td>
-                        <td>$ 5.4</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <div class="shorten-content constrain">
-        <div class="steps">
-            <div class="shorten">
-                <h2><i class="material-icons">link</i>Shorten</h2>
-                Shorten your URL so it’s ready to be shared everywhere
-            </div>
-            <div class="track">
-                <h2><i class="material-icons">trending_up</i>Track</h2>
-                Analytics help you know where your clicks are coming from
-            </div>
-            <div class="learn">
-                <h2><i class="material-icons">people</i>Learn</h2>
-                Understand and visualize your audience
-            </div>
-        </div>
-        <div class="firebase">
-            <img src="https://goo.gl/static/Firebase.png">
-            <div>
-                <h2>Are you an app developer?</h2>Use Firebase Dynamic Links to deep link users directly into your app.
-                <a href="//firebase.google.com/docs/dynamic-links/">Learn More<i class="material-icons">open_in_new</i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <ul class="constrain">
-        <li>Google</li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Report Spam</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Acceptable Usage Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-    </ul>
-</div>
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script>
     function onSignIn(googleUser) {
-        var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        fetch("http://localhost:3000/api/user/auth", {
+            "headers": {
+                'Content-Type': 'application/json'
+            },
+            "body": JSON.stringify({
+                token: googleUser.getAuthResponse().id_token
+            }),
+            "method": "POST",
+        });
     }
 </script>
 </body>
